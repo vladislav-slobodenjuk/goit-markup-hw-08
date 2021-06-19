@@ -1,0 +1,28 @@
+:root {
+  --logo-font: 'Raleway', sans-serif;
+  --primary-font: 'Roboto', sans-serif;
+  --brand-color: #2196f3;
+  --logo-secondary-color: #000000;
+  --text-color: #757575;
+  --text-secondary-color: #ffffff;
+  --mdl-btn-hover-bckgrnd: #188ce8;
+  --title-color: #212121;
+  --hero-background: rgba(47, 48, 58, 0.4);
+  --footer-background: #2f303a;
+  --secondary-background: #f5f4fa;
+  --address-secondary-color: rgba(255, 255, 255, 0.6);
+  --header-border: #ececec;
+  --project-border: #eeeeee;
+  --icon-color: #afb1b8;
+  --icon-footer-bg: rgba(255, 255, 255, 0.1);
+  --mdl-placeholder-color: rgba(117, 117, 117, 0.5);
+  --valid: green;
+  --invalid: red;
+
+  --do-overlay: rgba(47, 48, 58, 0.8);
+  --project-overlay: rgba(33, 150, 243, 0.9);
+  --modal-overlay: rgba(0, 0, 0, 0.2);
+
+  --trans-duration: 250ms;
+  --timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}

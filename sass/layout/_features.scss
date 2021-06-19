@@ -1,0 +1,33 @@
+.features__list {
+  display: flex;
+  align-items: center;
+}
+
+.features__item {
+  width: 270px;
+}
+
+.features__item:not(:last-child) {
+  margin-right: 30px;
+}
+
+.features__block {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  height: 120px;
+  margin-bottom: 30px;
+
+  background-color: var(--secondary-background);
+  border-radius: 4px;
+}
+
+.features__title {
+  margin-bottom: 10px;
+  text-transform: uppercase;
+}
+
+.features__desc {
+  line-height: 1.7;
+}
