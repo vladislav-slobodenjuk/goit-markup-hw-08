@@ -11,10 +11,10 @@
   background-position: center;
   background-size: cover;
 
-  // 0-767px and 2x
-  @media (min-device-pixel-ratio: 2) and (max-width: 767px),
-    (min-resolution: 192dpi) and (max-width: 767px),
-    (min-resolution: 2dppx) and (max-width: 767px) {
+  // 280px+ and 2x
+  @media (min-device-pixel-ratio: 2) and (min-width: 280px),
+    (min-resolution: 192dpi) and (min-width: 280px),
+    (min-resolution: 2dppx) and (min-width: 280px) {
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
       url('../../images/hero/hero-mob@2x.jpg');
   }
