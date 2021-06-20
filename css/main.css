@@ -92,6 +92,7 @@ ol {
 
 img {
   display: block;
+  width: 100%;
 }
 
 .list {
@@ -700,24 +701,22 @@ img {
 }
 
 .team__list {
-  display: flex;
-  flex-wrap: wrap;
-  margin-left: -30px;
-  margin-top: -30px;
   font-size: 16px;
   line-height: 1.1875;
 }
 
 .team__item {
-  margin-left: 30px;
-  margin-top: 30px;
-  flex-basis: calc((100% - 120px) / 4);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
 }
 
+.team__item:not(:last-child) {
+  margin-bottom: 30px;
+}
+
 .team__container {
-  padding: 30px 32px;
+  padding-top: 30px;
+  padding-bottom: 24px;
   text-align: center;
   background-color: var(--text-secondary-color);
   border-radius: 0px 0px 4px 4px;
@@ -732,6 +731,32 @@ img {
 
 .team__job {
   margin-bottom: 16px;
+}
+
+@media screen and (min-width: 768px) {
+  .team__list {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -30px;
+    margin-top: -30px;
+  }
+  .team__item {
+    margin-left: 30px;
+    margin-top: 30px;
+    flex-basis: calc((100% - 60px) / 2);
+  }
+  .team__item:not(:last-child) {
+    margin-bottom: unset;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .team__item {
+    flex-basis: calc((100% - 120px) / 4);
+  }
+  .team__container {
+    padding-bottom: 30px;
+  }
 }
 
 .customers__list {
