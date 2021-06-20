@@ -1,5 +1,12 @@
 .title {
-  font-size: inherit;
-  line-height: 1.14;
+  font-size: 14px;
+  line-height: (16px / 14px);
+  // 114%
   color: var(--title-color);
+}
+
+@media screen and (max-width: 767px) {
+  .title {
+    text-align: center;
+  }
 }
