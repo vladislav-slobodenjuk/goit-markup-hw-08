@@ -736,6 +736,7 @@ img {
 
 .customers__list {
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   align-items: center;
   margin-left: -30px;
@@ -745,14 +746,14 @@ img {
 .customers__item {
   margin-left: 30px;
   margin-top: 30px;
-  flex-basis: calc((100% - 180px) / 6);
+  flex-basis: calc((100% - 60px) / 2);
 }
 
 .customers__link {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 170px;
+  width: 210px;
   height: 92px;
   color: var(--icon-color);
   border: 1px solid var(--icon-color);
@@ -769,6 +770,24 @@ img {
   color: var(--brand-color);
   border: 1px solid var(--brand-color);
   animation: pulse 1000ms var(--timing-function);
+}
+
+@media screen and (min-width: 768px) {
+  .customers__item {
+    flex-basis: calc((100% - 90px) / 3);
+  }
+  .customers__link {
+    width: 226px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .customers__item {
+    flex-basis: calc((100% - 180px) / 6);
+  }
+  .customers__link {
+    width: 170px;
+  }
 }
 
 .footer {
