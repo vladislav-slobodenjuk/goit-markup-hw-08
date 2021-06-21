@@ -954,6 +954,12 @@ img {
     flex-wrap: unset;
     justify-content: space-between;
   }
+  .address-block {
+    margin-bottom: unset;
+  }
+  .footer-socials-block {
+    margin-bottom: unset;
+  }
   .email-form {
     width: unset;
   }
