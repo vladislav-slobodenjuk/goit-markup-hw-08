@@ -11,6 +11,30 @@
   }
 }
 
+.current {
+  color: var(--brand-color);
+
+  &::after {
+    content: '';
+
+    position: absolute;
+    bottom: 0;
+
+    display: block;
+    width: 100%;
+    height: 4px;
+
+    background-color: var(--brand-color);
+    border-radius: 2px;
+  }
+}
+
+.current--mobile {
+  &::after {
+    background-color: unset;
+  }
+}
+
 // 0 -767
 @media screen and (max-width: 767px) {
   .main-nav__list {
@@ -108,30 +132,6 @@
   .header .logo {
     margin-right: 88px;
     // margin-right: 94px;
-  }
-
-  .current {
-    color: var(--brand-color);
-
-    &::after {
-      content: '';
-
-      position: absolute;
-      bottom: 0;
-
-      display: block;
-      width: 100%;
-      height: 4px;
-
-      background-color: var(--brand-color);
-      border-radius: 2px;
-    }
-  }
-
-  .current--mobile {
-    &::after {
-      background-color: unset;
-    }
   }
 }
 
