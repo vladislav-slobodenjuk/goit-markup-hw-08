@@ -98,8 +98,9 @@
 .modal-form-checkbox-policy {
   /* display: flex; */
   /* align-items: center; */
-  font-size: 14px;
-  line-height: 1.71;
+  font-size: 12px;
+  line-height: (14px / 12px);
+  //117%
   letter-spacing: 0.03em;
 }
 
@@ -155,4 +156,12 @@
 .modal-form-btn:hover,
 .modal-form-btn:focus {
   background-color: var(--mdl-btn-hover-bckgrnd);
+}
+
+@media screen and (min-width: 1200px) {
+  .modal-form-checkbox-policy {
+    font-size: 14px;
+    line-height: (24px / 14px);
+    // 171%
+  }
 }
