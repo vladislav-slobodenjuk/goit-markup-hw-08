@@ -10,11 +10,11 @@
   margin-bottom: 50px;
 }
 
-.filter-item:not(:last-child) {
+.filter__item:not(:last-child) {
   margin-right: 8px;
 }
 
-.filter-button {
+.filter__button {
   font-family: inherit;
   font-weight: 500;
   font-size: inherit;
@@ -33,9 +33,9 @@
     box-shadow var(--trans-duration) var(--timing-function);
 }
 
-.filter-button:active,
-.filter-button:hover,
-.filter-button:focus {
+.filter__button:active,
+.filter__button:hover,
+.filter__button:focus {
   color: var(--text-secondary-color);
   background-color: var(--brand-color);
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
@@ -49,31 +49,31 @@
   margin-left: -30px;
 }
 
-.project-list-item {
+.project__item {
   margin-top: 30px;
   margin-left: 30px;
   flex-basis: calc((100% - 90px) / 3);
 }
 
-.project-list-link {
+.project__link {
   display: block;
   color: inherit;
 
   transition: box-shadow var(--trans-duration) var(--timing-function);
 }
 
-.project-list-link:hover,
-.project-list-link:focus {
+.project__link:hover,
+.project__link:focus {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
-.project-img-block {
+.project__header {
   position: relative;
   overflow: hidden;
 }
 
-.project-overlay-block {
+.project__overlay {
   position: absolute;
   bottom: 0;
   left: 0;
@@ -91,23 +91,23 @@
     opacity var(--trans-duration) var(--timing-function);
 }
 
-.project-list-link:hover .project-overlay-block,
-.project-list-link:focus .project-overlay-block {
+.project__link:hover .project__overlay,
+.project__link:focus .project__overlay {
   transform: translateY(0%);
   opacity: 1;
 }
 
-.project-overlay-text {
+.project__desc {
   color: var(--text-secondary-color);
 }
 
-.project-info-container {
+.project__body {
   padding: 20px 24px;
   border: 1px solid var(--project-border);
   border-top: none;
 }
 
-.project-title {
+.project__title {
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
