@@ -1,0 +1,145 @@
+@media screen and (max-width: 767px) {
+  .mobile-menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+
+    width: 100vw;
+    height: 100vh;
+
+    font-weight: 500;
+    letter-spacing: 0.02em;
+
+    background-color: var(--text-secondary-color);
+    overflow: auto;
+    z-index: 100;
+
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+
+    transition: opacity var(--trans-duration) var(--timing-function),
+      visibility var(--trans-duration) var(--timing-function);
+  }
+
+  .mobile-menu.is-open {
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+  }
+
+  .mobile-menu__container {
+    position: relative;
+    padding-top: 46px;
+    padding-bottom: 46px;
+    padding-left: 40px;
+  }
+
+  .mobile-menu__close-btn {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top: 10px;
+    right: 15px;
+    width: 40px;
+    height: 40px;
+    padding: 0;
+
+    background-color: transparent;
+    border: none;
+
+    transform: rotate(0deg);
+    transition: transform 250ms var(--timing-function);
+    fill: currentColor;
+  }
+
+  .mobile-menu__close-btn:hover,
+  .mobile-menu__close-btn:focus {
+    color: var(--brand-color);
+    transform: rotate(90deg);
+  }
+
+  .mobile-menu__nav {
+    margin-bottom: 302px;
+  }
+
+  .mobile-menu__item:not(:last-child) {
+    margin-bottom: 32px;
+  }
+
+  .mobile-menu__link {
+    font-size: 40px;
+    line-height: (47px / 40px);
+    //117%
+    color: var(--title-color);
+
+    transition: color var(--trans-duration) var(--timing-function);
+  }
+
+  .mobile-menu__link:hover,
+  .mobile-menu__link:focus,
+  .mobile-contacts__link:hover,
+  .mobile-contacts__link:focus {
+    color: var(--brand-color);
+    animation: headShake-test 750ms var(--timing-function);
+  }
+
+  .mobile-contacts {
+    margin-bottom: 64px;
+  }
+
+  .mobile-contacts__item:first-child {
+    margin-bottom: 33px;
+  }
+
+  .mobile-contacts__link {
+    transition: color var(--trans-duration) var(--timing-function);
+
+    &--phone {
+      font-size: 34px;
+      line-height: (40px / 34px);
+      // 176%
+      color: var(--brand-color);
+    }
+
+    &--mail {
+      font-size: 24px;
+      line-height: (28px / 24px);
+      // 117%
+      color: var(--text-color);
+    }
+  }
+
+  .mobile-socials__item {
+    display: inline-block;
+
+    &:not(:last-child) {
+      margin-right: 10px;
+    }
+  }
+
+  .mobile-socials__link {
+    font-size: 18px;
+    line-height: (22px / 18px);
+    // 122%
+    color: var(--brand-color);
+  }
+
+  .line::after {
+    content: '';
+    margin-left: 10px;
+
+    width: 22px;
+    height: 0px;
+
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    transform: rotate(90deg);
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .mobile-menu {
+    display: none;
+  }
+}

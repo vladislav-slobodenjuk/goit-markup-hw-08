@@ -1,9 +1,9 @@
 .logo {
   font-family: var(--logo-font);
   font-weight: 700;
-  font-size: 26px;
-  line-height: 1.19;
-  letter-spacing: 0.03em;
+  font-size: 24px;
+  line-height: (28px / 24px);
+  //117%
   color: var(--brand-color);
 
   animation-delay: 300ms;
@@ -15,4 +15,12 @@
 
 .logo__logo-footer {
   color: var(--text-secondary-color);
+}
+
+@media screen and (min-width: 1200px) {
+  .logo {
+    font-size: 26px;
+    line-height: (31px / 26px);
+    // 119%
+  }
 }

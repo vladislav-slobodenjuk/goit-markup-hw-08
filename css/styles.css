@@ -782,7 +782,7 @@ body {
   border-radius: 4px;
 }
 
-.modal-close-btn {
+.close-btn {
   position: absolute;
   display: flex;
   align-items: center;
@@ -803,8 +803,8 @@ body {
   fill: currentColor;
 }
 
-.modal-close-btn:hover,
-.modal-close-btn:focus {
+.close-btn:hover,
+.close-btn:focus {
   color: var(--brand-color);
   transform: rotate(90deg);
 }
