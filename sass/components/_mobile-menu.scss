@@ -11,7 +11,7 @@
     letter-spacing: 0.02em;
 
     background-color: var(--text-secondary-color);
-    overflow: auto;
+    // overflow: auto;
     z-index: 100;
 
     opacity: 0;
@@ -30,18 +30,25 @@
 
   .mobile-menu__container {
     position: relative;
+
+    display: flex;
+    flex-direction: column;
+
     padding-top: 46px;
     padding-bottom: 46px;
     padding-left: 40px;
+
+    height: 100%; // !!
   }
 
   .mobile-menu__close-btn {
     position: absolute;
     display: flex;
-    align-items: center;
     justify-content: center;
+    align-items: center;
     top: 10px;
     right: 15px;
+
     width: 40px;
     height: 40px;
     padding: 0;
@@ -60,9 +67,9 @@
     transform: rotate(90deg);
   }
 
-  .mobile-menu__nav {
-    margin-bottom: 302px;
-  }
+  // .mobile-menu__nav {
+  //   margin-bottom: 302px;
+  // }
 
   .mobile-menu__item:not(:last-child) {
     margin-bottom: 32px;
@@ -86,6 +93,7 @@
   }
 
   .mobile-contacts {
+    margin-top: auto; // !!
     margin-bottom: 64px;
   }
 
