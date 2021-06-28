@@ -1,16 +1,18 @@
 .modal-btn {
+  padding: 10px 32px;
+
   font-weight: 700;
   font-size: 16px;
   line-height: 1.88;
   // text-align: center;
   letter-spacing: 0.06em;
+
   color: var(--text-secondary-color);
   background-color: var(--brand-color);
-  cursor: pointer;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border: none;
   border-radius: 4px;
-  padding: 10px 32px;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  cursor: pointer;
 
   transition: background-color var(--trans-duration) var(--timing-function);
 }

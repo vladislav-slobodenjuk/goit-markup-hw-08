@@ -140,17 +140,17 @@ img {
 }
 
 .modal-btn {
+  padding: 10px 32px;
   font-weight: 700;
   font-size: 16px;
   line-height: 1.88;
   letter-spacing: 0.06em;
   color: var(--text-secondary-color);
   background-color: var(--brand-color);
-  cursor: pointer;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border: none;
   border-radius: 4px;
-  padding: 10px 32px;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  cursor: pointer;
   transition: background-color var(--trans-duration) var(--timing-function);
 }
 
@@ -273,14 +273,14 @@ img {
   }
   .mobile-menu__close-btn {
     position: absolute;
+    top: 10px;
+    right: 15px;
     display: flex;
     justify-content: center;
     align-items: center;
-    top: 10px;
-    right: 15px;
+    padding: 0;
     width: 40px;
     height: 40px;
-    padding: 0;
     background-color: transparent;
     border: none;
     transform: rotate(0deg);
@@ -357,14 +357,14 @@ img {
 
 .modal-close-btn {
   position: absolute;
+  top: 8px;
+  right: 8px;
   display: flex;
   align-items: center;
   justify-content: center;
-  top: 8px;
-  right: 8px;
+  padding: 0;
   width: 30px;
   height: 30px;
-  padding: 0;
   background-color: var(--text-secondary-color);
   border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 50%;
@@ -561,6 +561,7 @@ img {
 
 .modal-form-btn {
   align-self: center;
+  padding: 10px 56px;
   font-weight: 700;
   font-size: 16px;
   line-height: 1.88;
@@ -568,9 +569,8 @@ img {
   color: var(--text-secondary-color);
   background-color: var(--brand-color);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-  border-radius: 4px;
   border: none;
-  padding: 10px 56px;
+  border-radius: 4px;
   cursor: pointer;
   transition: background-color var(--trans-duration) var(--timing-function);
 }
@@ -795,8 +795,8 @@ img {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 120px;
   margin-bottom: 30px;
+  height: 120px;
   background-color: var(--secondary-background);
   border-radius: 4px;
 }
@@ -1100,8 +1100,8 @@ img {
   color: var(--text-secondary-color);
   background-color: var(--brand-color);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-  border-radius: 4px;
   border: none;
+  border-radius: 4px;
   cursor: pointer;
   transition: background-color var(--trans-duration) var(--timing-function);
 }
@@ -1109,6 +1109,7 @@ img {
 .footer-form-btn:hover,
 .footer-form-btn:focus {
   background-color: var(--mdl-btn-hover-bckgrnd);
+  animation: flip 750ms var(--timing-function) 150ms;
 }
 
 .btn-text-wrapper {
@@ -1136,7 +1137,6 @@ img {
     text-align: unset;
   }
   .footer-container {
-    display: flex;
     flex-wrap: unset;
     justify-content: space-between;
   }
